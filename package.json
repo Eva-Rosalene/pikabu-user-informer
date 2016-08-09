@@ -1,0 +1,30 @@
+{
+  "name": "pikabu-user-informer",
+  "version": "1.0.0",
+  "description": "* Во-первых, если у пользователя есть заметка, оставленная вами на чёрный день, рядом с его ником появляется маленькая красная звёздочка. * Во-вторых, теперь при наведении курсора на ник любого юзера, выводится информер, выдираемый прямо из профиля. Заметка переносится непосредственно под ник, лишние кнопки, которые всё равно не нажать, убраны.",
+  "main": "index.js",
+  "dependencies": {
+    "amd-define-factory-patcher-loader": "^1.0.0",
+    "babel": "^6.5.2",
+    "babel-core": "^6.13.2",
+    "babel-loader": "^6.2.4",
+    "babel-preset-es2015": "^6.13.2",
+    "jquery": "^3.1.0",
+    "sizzle": "^2.3.3",
+    "webpack": "^1.13.1"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/thekiba/pikabu-user-informer.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/thekiba/pikabu-user-informer/issues"
+  },
+  "homepage": "https://github.com/thekiba/pikabu-user-informer#readme"
+}
