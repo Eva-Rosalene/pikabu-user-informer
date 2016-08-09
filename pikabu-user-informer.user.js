@@ -83,7 +83,8 @@
 					infoDiv.style.position = 'fixed';
 					infoDiv.style.zIndex = '10000000';
 					infoDiv.style.display = 'none';
-					infoDiv.style.border = '1px solid black';
+					infoDiv.style.border = '1px solid #d0dde5';
+					infoDiv.style.borderRadius = '3px';
 				  infoDiv.style.paddingRight = '30px';
 					infoDiv.appendChild(profileTableCell.parentElement.parentElement.parentElement);
 					resolve(infoDiv);
