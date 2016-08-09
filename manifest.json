@@ -1,0 +1,18 @@
+{
+  "manifest_version": 2,
+
+  "name": "Pikabu user informer",
+  "description": "This extension shows a user profiles for the current page on pikabu.ru",
+  "version": "1.0",
+
+  "content_scripts": [
+    {
+      "matches": ["http://pikabu.ru/*"],
+      "js": ["pikabu-user-informer.user.js"]
+    }
+  ],
+
+  "permissions": [
+    "http://pikabu.ru/"
+  ]
+}
