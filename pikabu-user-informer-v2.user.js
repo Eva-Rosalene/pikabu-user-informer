@@ -131,7 +131,7 @@
 								var note = profileDocument.querySelector('#usr-note-text') ? profileDocument.querySelector('#usr-note-text').value : '';
 
 								var imported = scope[self].document.importNode(profileDocument.querySelector('.b-user-profile'), true);
-								Array.from(imported.querySelectorAll('[data-action^=ignore], .b-button')).forEach(item => item.parentElement.removeChild(item));
+								Array.from(imported.querySelectorAll('[data-action^=ignore], .b-button, td:nth-child(3)')).forEach(item => item.parentElement.removeChild(item));
 								
 								var noteSpan = scope[self].document.createElement('p' /* don't ever ask me, why span */);
 								noteSpan.appendChild(scope[self].document.createTextNode(note));
