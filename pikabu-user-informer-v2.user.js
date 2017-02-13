@@ -1,8 +1,8 @@
-// ==UserScript==
+п»ї// ==UserScript==
 // @name         Pikabu User Info On Demand
 // @namespace    pikabu
 // @version      0.6
-// @description  Показывает информер с профилем пользователя при наведении мыши на ник 
+// @description  РџРѕРєР°Р·С‹РІР°РµС‚ РёРЅС„РѕСЂРјРµСЂ СЃ РїСЂРѕС„РёР»РµРј РїРѕР»СЊР·РѕРІР°С‚РµР»СЏ РїСЂРё РЅР°РІРµРґРµРЅРёРё РјС‹С€Рё РЅР° РЅРёРє 
 // @author       FraidZZ
 // @match        http*://pikabu.ru/*
 // @grant        none
@@ -104,7 +104,7 @@
                 var userSpans = [].slice.call(document.querySelectorAll('.b-comment__user > a > span:not(.userscript-rendered), .story__author:not(.userscript-rendered)')); // i should refactor this some year...
                 userSpans.forEach((userSpan) => {
                     userSpan.setAttribute('class', (userSpan.getAttribute('class') ? userSpan.getAttribute('class') : '') + ' userscript-rendered');
-                    userSpan.setAttribute('title', 'Загрузка...');
+                    userSpan.setAttribute('title', 'Р—Р°РіСЂСѓР·РєР°...');
 
                     var nick = userSpan.textContent;
                     var placeData = {

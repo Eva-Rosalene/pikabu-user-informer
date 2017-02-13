@@ -89,7 +89,7 @@ var Core = (function ( ) {
 			var userSpans = [].slice.call(document.querySelectorAll('.b-comment__user > a > span:not(.userscript-rendered), .story__author:not(.userscript-rendered)')); // i should refactor this some year...
 			userSpans.forEach((userSpan) => {
 				userSpan.setAttribute('class', (userSpan.getAttribute('class') ? userSpan.getAttribute('class') : '') + ' userscript-rendered');
-				userSpan.setAttribute('title', 'Загрузка...');
+				userSpan.setAttribute('title', 'Р—Р°РіСЂСѓР·РєР°...');
 				
 				var nick = userSpan.textContent;
 				var placeData = {
