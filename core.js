@@ -1,13 +1,20 @@
 var Core = (function ( ) {
 	var scope = new WeakMap( );
 	
-	function Core(downloader, doc) {
+	function Core(downloader, notes, doc) {
 		scope[this] = { };
+		var self = this;
 		
 		scope[this].document = doc || document;
+		scope[this].notes = notes;
 		scope[this].downloader = downloader;
 		scope[this].profileCache = { };
 		scope[this].nodeCache = { };
+		scope[this].notesCache = [ ];
+		
+		notes.getAll( ).then(users => {
+			scope[self].notesCache = users;
+		});
 		
 		scope[this].getProfileDOM = function (user) {
 			var self = this;
@@ -92,6 +99,9 @@ var Core = (function ( ) {
 				userSpan.setAttribute('title', 'Загрузка...');
 				
 				var nick = userSpan.textContent;
+				if (scope[self].notesCache.indexOf(nick) !== -1)
+					scope[self].addNoteSym(userSpan, 'red');
+				
 				var placeData = {
 					clientX: 0,
 					clientY: 0,
