@@ -5,7 +5,7 @@ var exec = (function ( ) {
 			
 			if (!iterator.done) {
 				iterator.value.then((data) => helper(resolve, reject, generator, false, data),
-									(error) => helper(resolve, reject, genetator, true, error));
+									(error) => helper(resolve, reject, generator, true, error));
 			} else {
 				resolve(iterator.value);
 			}
